@@ -1,7 +1,8 @@
 <div class="container">
   <h1><%= @task.title %></h1>
   <p><%= @task.details %></p>
-  <!-- <p><%= %></p> -->
-  <%= link_to "<-- Back to Tasks", tasks_path %>
-  <%= link_to "Edit this task", edit_task_path %>
+  <div class="crud-links">
+    <%= link_to "<-- Back to Tasks", tasks_path %>
+    <%= link_to "Edit this task", edit_task_path %>
+  </div>
 </div>
